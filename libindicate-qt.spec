@@ -17,6 +17,7 @@ URL:		https://launchpad.net/libindicate-qt
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libindicate-devel
 BuildRequires:	qt4-devel
+BuildRequires:	cmake
 
 %description
 This project provides a set of Qt bindings for libindicate, the
@@ -36,8 +37,8 @@ Qt Bindings for libindicate
 %files -n %{libname}
 %defattr(-,root,root)
 %doc COPYING COPYING.LIB.LGPL.2.1 COPYING.LIB.LGPL.3 NEWS
-%{_libdir}/libindicate-qt.so.1
-%{_libdir}/libindicate-qt.so.1.1.0
+%{_libdir}/libindicate-qt.so.%{major}
+%{_libdir}/libindicate-qt.so.%{major}.*
 
 #-----------------------------------------------------------------------
 
