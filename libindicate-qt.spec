@@ -1,5 +1,5 @@
 %define name libindicate-qt
-%define version 0.2.2
+%define version 0.2.4
 %define release %mkrel 1
 %define summary Library for applications to raise flags on DBus
 %define major 1
@@ -10,7 +10,7 @@ Summary:	%summary
 Name:		%name
 Version:	%version
 Release:	%release
-Source0:	http://launchpad.net/libindicate-qt/trunk/0.2.2/+download/libindicate-qt-0.2.2.tar.bz2
+Source0:	http://launchpad.net/libindicate-qt/trunk/%{version}/+download/%{name}-%{version}.tar.bz2
 License:	LGPLv3
 Group:		System/Libraries
 URL:		https://launchpad.net/libindicate-qt
@@ -37,8 +37,8 @@ Qt Bindings for libindicate
 %files -n %{libname}
 %defattr(-,root,root)
 %doc COPYING COPYING.LIB.LGPL.2.1 COPYING.LIB.LGPL.3 NEWS
-%{_libdir}/libindicate-qt.so.%{major}
-%{_libdir}/libindicate-qt.so.%{major}.*
+%{_libdir}/libindicate-qt.so.%{major}*
+
 
 #-----------------------------------------------------------------------
 
