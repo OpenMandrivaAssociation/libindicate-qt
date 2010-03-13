@@ -1,5 +1,5 @@
 %define name libindicate-qt
-%define version 0.2.4
+%define version 0.2.5
 %define release %mkrel 1
 %define summary Library for applications to raise flags on DBus
 %define major 1
