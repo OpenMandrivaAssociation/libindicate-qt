@@ -1,6 +1,6 @@
 %define name libindicate-qt
 %define version 0.2.5
-%define release %mkrel 1
+%define release %mkrel 2
 %define summary Library for applications to raise flags on DBus
 %define major 1
 %define libname %mklibname indicate-qt %{major}
