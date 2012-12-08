@@ -1,6 +1,6 @@
 %define name libindicate-qt
 %define version 0.2.5
-%define release %mkrel 3
+%define release %mkrel 5
 %define summary Library for applications to raise flags on DBus
 %define major 1
 %define libname %mklibname indicate-qt %{major}
@@ -73,3 +73,28 @@ to incorporate %{name} into applications.
 
 %clean
 %__rm -rf %{buildroot}
+
+
+%changelog
+* Mon May 02 2011 Oden Eriksson <oeriksson@mandriva.com> 0.2.5-3mdv2011.0
++ Revision: 661477
+- mass rebuild
+
+* Sun Nov 28 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2.5-2mdv2011.0
++ Revision: 602561
+- rebuild
+
+* Sat Mar 13 2010 John Balcaen <mikala@mandriva.org> 0.2.5-1mdv2010.1
++ Revision: 518769
+- Update to 0.2.5
+- Update to 0.2.4
+- cosmetic changes in spec
+
+* Thu Dec 10 2009 Funda Wang <fwang@mandriva.org> 0.2.2-1mdv2010.1
++ Revision: 476109
+- BR cmake
+
+  + John Balcaen <mikala@mandriva.org>
+    - import libindicate-qt
+
+
